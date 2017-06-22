@@ -1,0 +1,292 @@
+/*------------------------*/
+/*     Google Fonts       */
+/*------------------------*/
+
+@import url(https://fonts.googleapis.com/css?family=PT+Sans);
+
+/*------------------------*/
+/*        General         */
+/*------------------------*/
+
+*{
+  margin: 0;
+}
+
+body{
+  background-color: #ebeef0;
+  font-family: PT Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+a{
+   color: #3498db;
+}
+a:hover{
+   color: #585858;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* General Class */
+
+.white-content{
+  background-color: #fff;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19); */
+  /* border: 1px solid #cfcfcf; */
+  border-radius: 3px;
+  padding: 20px 15px;
+  overflow: hidden;
+}
+
+/* End of General Class */
+
+
+/*------------------------*/
+/*       Navigation       */
+/*------------------------*/
+
+#nav{
+  position: fixed;
+  width: 100%;
+  margin-bottom: auto;
+  overflow: hidden;
+  top: 0;
+}
+#nav ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #303030;
+}
+#nav li{
+  float: left;
+}
+#nav li a, .brand{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 18px 22px;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+#nav li a:hover{
+  background-color: #6e6e6e;
+}
+
+
+.brand{
+  font-weight: bold;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.active{
+  background-color: #6e6e6e;
+}
+
+/* Responsive */
+@media screen and (max-width: 600px){
+  #nav ul li{
+    float: none;
+  }
+}
+
+
+
+/*------------------------*/
+/*         Header         */
+/*------------------------*/
+
+#header{
+  color: #fff;
+  background-color: #fff;
+  background-image: url('img/header.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 90px 28px;
+  margin-top: 54px;
+}
+
+
+/*------------------------*/
+/*          Post          */
+/*------------------------*/
+
+#post{
+  padding: 25px 0px 25px 21px;
+  float: left;
+  width: 70%;
+}
+#post .author{
+  color: #666;
+  font-family: times;
+  font-weight: lighter;
+  font-style: italic;
+}
+#post .post-title{
+  font-size: 24px;
+  font-family: PT Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-top: 10px;
+}
+#post p{
+  color: #555;
+  font-family: serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+#post img{
+  float: left;
+  padding: 0px;
+  margin-right: 10px;
+}
+
+.post-featured-image {
+  width: 260px;
+}
+.post-content {
+  width: 800px;
+}
+
+@media only screen and (max-width: 935px){
+  #post{
+    float: none;
+    width: 100%;
+  }
+  .white-content{
+    width: 90%;
+  }
+}
+
+@media only screen and(max-width: 590px){
+  #post{
+    float: none;
+    width: 100%;
+  }
+  .white-content{
+    width: 85%;
+  }
+}
+
+/* Responsive */
+@media only screen and (max-width: 390px){
+  #post{
+    float: none;
+    width: 100%;
+  }
+  .white-content{
+    width: 79%;
+    padding: 20px 15px;
+  }
+  #post img{
+    margin-left: 15px;
+    margin-bottom: 20px;
+  }
+}
+
+
+/*------------------------*/
+/*        Sidebar         */
+/*------------------------*/
+
+#sidebar{
+  padding: 25px 0px 25px 25px;
+  float: left;
+  width: 25%;
+}
+#sidebar ul{
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+#sidebar li{
+  background-color: inherit;
+  padding: 5px 10px;
+  margin: 2px 0px;
+  border-radius: 3px;
+}
+#sidebar a{
+  color: #3498db;
+  text-decoration: none;
+}
+#sidebar a:hover{
+  color: #585858;
+}
+/* Responsive */
+@media only screen and (max-width: 390px){
+  #sidebar{
+    float: none;
+    width: 100%;
+    padding: 0px 22px 30px 22px;
+  }
+  .white-content{
+    width: 79%;
+    padding: 20px 15px;
+  }
+}
+
+
+/* sidebar bottom */
+
+#sidebar-bottom{
+  clear: both;
+  padding: 35px 25px;
+  background-color: #fff;
+  overflow: hidden;
+}
+#sidebar-bottom ul{
+  list-style-type: none;
+  padding: 0px;
+  margin: 10px 0px 0px 0px;
+}
+#sidebar-bottom li{
+  background-color: inherit;
+  padding: 5px 10px;
+  margin: 2px 0px;
+  border-radius: 3px;
+}
+#sidebar-bottom a{
+  color: #3498db;
+  text-decoration: none;
+}
+#sidebar-bottom a:hover{
+  color: #585858;
+}
+
+/* Sidebar Class */
+
+.sidebar-title{
+  background-color: #303030;
+  color: #fff;
+  padding: 5px 10px;
+  font-family: sans-serif;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.sidebar {
+  width: 20%;
+  float: left;
+  margin-left: 34px;
+  padding: 10px;
+}
+/* End of Sidebar Class */
+
+/*------------------------*/
+/*         Footer         */
+/*------------------------*/
+
+#footer{
+  background-color: #303030;
+  clear: both;
+  padding: 15px;
+  color: #fff;
+}
+
+.copyright{
+  text-align: center;
+  text-decoration: none;
+}
