@@ -1,0 +1,109 @@
+body{
+  background-color: #ededed;
+}
+
+
+#start { font-size: 1em; }
+#started { font-size: 1em; }
+#startedby { font-size: 1.2em; }
+#visited { font-size: 1.2em; }
+#visit { font-size: 1em; }
+#comments { font-size: 1.2em; }
+#comment { font-size: 1em; }
+.post-title {
+  text-decoration: none;
+  color: #000000;
+  font-size: 24px;
+  font-family: PT Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  line-height: 1.2;
+  font-weight: 700;
+}
+.post-title:hover { text-decoration: none; color: #5b5b5b; }
+.post-content{
+  margin-top: 25px;
+}
+.post-content p{
+  color: #555;
+  font-family: serif;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 15px 0px;
+}
+.thumbnail{
+  padding: 0px;
+  border: none;
+}
+
+/*-----------------------*/
+/* Widget Area           */
+/*-----------------------*/
+
+.widget-title{
+  padding: 0px 10px;
+  margin-top: -10px;
+  margin-bottom: -10px;
+}
+.widget-title h3{
+  background-color: #000;
+  color: #fff;
+  font-size: 24px;
+  padding: 10px 20px;
+}
+
+.widget-content{
+  padding: 0px;
+  margin: 10px;
+}
+.widget-content ul{
+  margin: 0px;
+  padding: 10px 0px;
+  list-style-type: none;
+}
+.widget-content li:before {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding: 0 10px;
+    content: "\e080";
+}
+.widget-content ul li a{
+  text-decoration: none;
+  font-size: 18px;
+  padding: 0px;
+}
+
+
+/*-----------------------*/
+/* End Widget Area       */
+/*-----------------------*/
+
+.navbar {
+ min-height: 60px;
+}
+
+.navbar-brand {
+ padding: 0 15px;
+ height: 60px;
+ line-height: 60px;
+}
+
+.navbar-toggle {
+ /* (60px - button height 34px) / 2 = 23px */
+ margin-top: 13px;
+ padding: 9px 10px !important;
+}
+
+@media (min-width: 768px) {
+ .navbar-nav > li > a {
+   /* (60px - line-height of 27px) / 2 = 26.5px */
+   padding-top: 16.5px;
+   padding-bottom: 16.5px;
+   line-height: 27px;
+ }
+}
