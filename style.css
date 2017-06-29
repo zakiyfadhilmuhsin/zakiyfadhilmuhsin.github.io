@@ -1,8 +1,51 @@
+/*-----------------------*/
+/* General               */
+/*-----------------------*/
 body{
   background-color: #ededed;
 }
+/*-----------------------*/
+/* End General           */
+/*-----------------------*/
 
 
+
+/*-----------------------*/
+/* Navbar                */
+/*-----------------------*/
+.navbar {
+ min-height: 60px;
+}
+
+.navbar-brand {
+ padding: 0 15px;
+ height: 60px;
+ line-height: 60px;
+}
+
+.navbar-toggle {
+ /* (60px - button height 34px) / 2 = 23px */
+ margin-top: 13px;
+ padding: 9px 10px !important;
+}
+
+@media (min-width: 768px) {
+ .navbar-nav > li > a {
+   /* (60px - line-height of 27px) / 2 = 26.5px */
+   padding-top: 16.5px;
+   padding-bottom: 16.5px;
+   line-height: 27px;
+ }
+}
+/*-----------------------*/
+/* End Navbar            */
+/*-----------------------*/
+
+
+
+/*-----------------------*/
+/* Post Area             */
+/*-----------------------*/
 #start { font-size: 1em; }
 #started { font-size: 1em; }
 #startedby { font-size: 1.2em; }
@@ -33,30 +76,37 @@ body{
   padding: 0px;
   border: none;
 }
+/*-----------------------*/
+/* End Post Area         */
+/*-----------------------*/
+
+
 
 /*-----------------------*/
 /* Widget Area           */
 /*-----------------------*/
-
 .widget-title{
   padding: 0px 10px;
   margin-top: -10px;
   margin-bottom: -10px;
 }
 .widget-title h3{
-  background-color: #000;
+  background-color: #393939;
   color: #fff;
   font-size: 24px;
   padding: 10px 20px;
 }
 
 .widget-content{
-  padding: 0px;
+  padding-top: 15px;
   margin: 10px;
 }
+.widget-content p{
+  font-size: 18px;
+}
 .widget-content ul{
-  margin: 0px;
-  padding: 10px 0px;
+  margin: 0;
+  padding: 0;
   list-style-type: none;
 }
 .widget-content li:before {
@@ -77,33 +127,122 @@ body{
   font-size: 18px;
   padding: 0px;
 }
-
-
 /*-----------------------*/
 /* End Widget Area       */
 /*-----------------------*/
 
-.navbar {
- min-height: 60px;
+
+
+/*-----------------------*/
+/* Footer Widget Area    */
+/*-----------------------*/
+.footer-widget{
+  background-color: #fff;
+  padding-top: 25px;
 }
 
-.navbar-brand {
- padding: 0 15px;
- height: 60px;
- line-height: 60px;
+.footer-widget-title{
+  padding: 0px 10px;
+  margin-top: -10px;
+  margin-bottom: -10px;
+}
+.footer-widget-title h3{
+  background-color: #393939;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 20px;
 }
 
-.navbar-toggle {
- /* (60px - button height 34px) / 2 = 23px */
- margin-top: 13px;
- padding: 9px 10px !important;
+.footer-widget-content{
+  padding-top: 15px;
+  margin: 10px;
+}
+.footer-widget-content p{
+  font-size: 16px;
+}
+.footer-widget-content ul{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.footer-widget-content li:before {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding: 0 10px;
+    content: "\e080";
+}
+.footer-widget-content ul li a{
+  text-decoration: none;
+  font-size: 17px;
+  padding: 0px;
 }
 
-@media (min-width: 768px) {
- .navbar-nav > li > a {
-   /* (60px - line-height of 27px) / 2 = 26.5px */
-   padding-top: 16.5px;
-   padding-bottom: 16.5px;
-   line-height: 27px;
+.social-media{
+  text-align: center;
+  padding: 20px;
+}
+
+.social:hover {
+     -webkit-transform: scale(1.1);
+     -moz-transform: scale(1.1);
+     -o-transform: scale(1.1);
  }
+ .social {
+     -webkit-transform: scale(0.8);
+     /* Browser Variations: */
+
+     -moz-transform: scale(0.8);
+     -o-transform: scale(0.8);
+     -webkit-transition-duration: 0.5s;
+     -moz-transition-duration: 0.5s;
+     -o-transition-duration: 0.5s;
+ }
+
+/*
+    Multicoloured Hover Variations
+*/
+
+ #social-fb:hover {
+     color: #3B5998;
+ }
+ #social-tw:hover {
+     color: #4099FF;
+ }
+ #social-gp:hover {
+     color: #d34836;
+ }
+ #social-em:hover {
+     color: #f39c12;
+ }
+/*------------------------*/
+/* End Footer Widget Area */
+/*------------------------*/
+
+
+
+/*-----------------------*/
+/* Footer Area           */
+/*-----------------------*/
+.footer-copyright{
+  background-color: #393939;
+  color: #fff;
+  padding-top: 10px;
 }
+.footer-copyright p{
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.footer-copyright i{
+  color: #ba1f1f;
+}
+/*-----------------------*/
+/* End Footer Area       */
+/*-----------------------*/
